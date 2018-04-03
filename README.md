@@ -4,6 +4,8 @@
 
 Demo: https://ipfs.io/ipfs/QmeUDhFmhxwFAjvKth9iiywJKrbgGq7cehGLsaAKthjzy1
 
+Using `window.ipfs`, this sample app shows you a QR code to `https://ipfs.io/ipns/{peer id}` and another containing the public key of your peer.
+
 ## Install
 
 1. This app requires `window.ipfs`. Install the IPFS Companion web extension:
