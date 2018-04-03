@@ -1,7 +1,7 @@
 const qrcode = require('qrcode-generator')
 
 function makeQR (data, id) {
-  let qr, base64, el
+  let qr, base64, tag, el
 
   // Build QR
   qr = qrcode(0, 'L')
@@ -9,7 +9,9 @@ function makeQR (data, id) {
   qr.make()
 
   // Create Base64
-  base64 = window.btoa(qr.createSvgTag().replace('black', '#0b3a53', -1))
+  tag = qr.createSvgTag()
+  tag = tag.replace('black', '#0b3a53', -1)
+  base64 = window.btoa(tag)
 
   // Fill element
   el = document.getElementById(id)
