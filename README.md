@@ -1,8 +1,8 @@
 # IPFS ID and Public Key example
 
-![](https://user-images.githubusercontent.com/5447088/38266826-9604e06a-3771-11e8-8942-34157b46ed58.png)
+![](https://user-images.githubusercontent.com/5447088/38272321-cfc5ffd2-3780-11e8-93bd-51427c850271.png)
 
-Demo: https://ipfs.io/ipfs/QmRXn6ShDFCbjuJqmD9WitWtUAzohGik4yKzuyNZCPDaxf
+Demo: https://ipfs.io/ipfs/zdj7WgBWLJVY7kCGouYDdoe1rrjBGsCwLDH2ojagd6QW9c6w3
 ## Install
 
 1. This app requires `window.ipfs`. Install the IPFS Companion web extension:
