@@ -9,7 +9,7 @@ function makeQR (data, id) {
   qr.make()
 
   // Create Base64
-  base64 = btoa(qr.createSvgTag())
+  base64 = btoa(qr.createSvgTag().replace('black', '#0b3a53', -1))
 
   // Fill element
   el = document.getElementById(id)
