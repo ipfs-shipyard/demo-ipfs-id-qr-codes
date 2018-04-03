@@ -1,11 +1,8 @@
 # IPFS ID and Public Key example
 
-![](https://user-images.githubusercontent.com/5447088/38264829-1e816432-376c-11e8-8c4a-1cad36742ea5.png)
+![](https://user-images.githubusercontent.com/5447088/38266826-9604e06a-3771-11e8-8942-34157b46ed58.png)
 
-Demo: https://ipfs.io/ipfs/QmeUDhFmhxwFAjvKth9iiywJKrbgGq7cehGLsaAKthjzy1
-
-Using `window.ipfs`, this sample app shows you a QR code to `https://ipfs.io/ipns/{peer id}` and another containing the public key of your peer.
-
+Demo: https://ipfs.io/ipfs/QmRXn6ShDFCbjuJqmD9WitWtUAzohGik4yKzuyNZCPDaxf
 ## Install
 
 1. This app requires `window.ipfs`. Install the IPFS Companion web extension:
