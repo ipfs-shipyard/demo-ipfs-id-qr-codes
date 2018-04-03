@@ -2,14 +2,14 @@ const qrcode = require('qrcode-generator')
 
 function makeQR (data, id) {
   let qr, base64, el
-  
+
   // Build QR
   qr = qrcode(0, 'L')
   qr.addData(data)
   qr.make()
 
   // Create Base64
-  base64 = btoa(qr.createSvgTag().replace('black', '#0b3a53', -1))
+  base64 = window.btoa(qr.createSvgTag().replace('black', '#0b3a53', -1))
 
   // Fill element
   el = document.getElementById(id)
