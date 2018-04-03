@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IPFS QR Codes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="tachyons.css">
+  <link rel="stylesheet" href="ipfs.css">
+  <style>
+    #qrs > div {
+      min-width: 10em;
+    }
+    #qrs img {
+      width: 100% !important;
+      height: auto !important;
+    }
+  </style>
+</head>
+<body class="bg-navy sans-serif">
+  <header class='center mw7 tc pv4'>
+    <a href="https://ipfs.io/" title="ipfs.io">
+      <img src="https://ipfs.io/images/ipfs-logo.svg" class="v-mid" style="height:100px">
+    </a>
+  </header>
+
+  <main class='center mw7'>
+    <div id='error' class='dn black bg-red-muted pa3'></div>
+
+    <div id='qrs' class='dn'>
+      <div class='flex flex-wrap'>
+        <div class='w-50 pa3 flex-grow-1'>
+          <h2 class="snow f3 lh-copy">IPNS Link</h2>
+          <div id="id"></div>
+        </div>
+    
+        <div class='w-50 pa3 flex-grow-1'>
+          <h2 class="snow f3 lh-copy">Public Key</h2>
+          <div id="pub-key"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="bundle.js"></script>
+</body>
+</html>
