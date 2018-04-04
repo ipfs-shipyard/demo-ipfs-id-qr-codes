@@ -2164,6 +2164,10 @@ which@^1.2.9:
   dependencies:
     isexe "^2.0.0"
 
+window.ipfs-is-required@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/window.ipfs-is-required/-/window.ipfs-is-required-1.0.1.tgz#9503be485dc8338561825ee4167e4d33217e72be"
+
 wordwrap@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-1.0.0.tgz#27584810891456a4171c8d0226441ade90cbcaeb"
