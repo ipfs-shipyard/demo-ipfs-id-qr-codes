@@ -2,7 +2,8 @@
 
 ![](https://user-images.githubusercontent.com/5447088/38272321-cfc5ffd2-3780-11e8-93bd-51427c850271.png)
 
-Demo: https://ipfs.io/ipfs/zdj7WgBWLJVY7kCGouYDdoe1rrjBGsCwLDH2ojagd6QW9c6w3
+Demo: https://ipfs.io/ipfs/zdj7Wdcw6hajK8frf7XRemEm3RHKW7dDeg4CR3u4NDv4SeZYt
+
 ## Install
 
 1. This app requires `window.ipfs`. Install the IPFS Companion web extension:
