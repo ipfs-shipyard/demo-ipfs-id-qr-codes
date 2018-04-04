@@ -23,26 +23,31 @@
     </a>
   </header>
 
-  <main class='center mw7'>
-    <div class='white bg-teal pa3'>
-        Using <code>window.ipfs</code>, provided by IPFS Companion, we are able to get your
-        peer information and generate a QR Code with your IPNS URL and your public key.
+  <main class='center mw7 ph3'>
+    <div class='white bg-teal pa3 mv2'>
+      Using <code>window.ipfs</code>, provided by IPFS Companion, we are able to get your
+      peer information and generate a QR Code with your IPNS Link and your public key.
     </div>
 
-    <div id='error' class='dn black bg-red-muted pa3'></div>
+    <div id='error' class='dn black bg-red-muted pa3 mv2'></div>
 
     <div id='qrs' class='dn'>
       <div class='flex flex-wrap'>
-        <div class='w-50 pa3 flex-grow-1'>
-          <h2 class="snow f3 lh-copy">IPNS Link</h2>
-          <div id="id"></div>
+        <div class='w-50 pr3 pv3 flex-grow-1'>
+          <h2 class="mt0 snow f3 lh-copy">IPNS Link</h2>
+          <div id="ipns-link"></div>
         </div>
     
-        <div class='w-50 pa3 flex-grow-1'>
-          <h2 class="snow f3 lh-copy">Public Key</h2>
+        <div class='w-50 pl3 pv3 flex-grow-1'>
+          <h2 class="mt0 snow f3 lh-copy">Public Key</h2>
           <div id="pub-key"></div>
         </div>
       </div>
+    </div>
+
+    <div class='white bg-teal-muted pa3 mv2'>
+      <strong>Peer ID:</strong> <code id='id'></code><br>
+      <strong>IPNS Link:</strong> <code id='ipns-link-raw'></code>
     </div>
   </main>
   <script src="bundle.js"></script>

@@ -1,5 +1,9 @@
 const qrcode = require('qrcode-generator')
 
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.ipfs) return
+})
+
 function makeQR (data, id) {
   let qr, base64, tag, el
 
@@ -34,9 +38,15 @@ document.addEventListener('DOMContentLoaded', () => {
   window.ipfs.id((err, data) => {
     if (err) return showError(err)
 
+    const ipnsLink = `https://ipfs.io/ipns/${data.id}`
+
     // Display and make QRs
     document.getElementById('qrs').classList.remove('dn')
-    makeQR(`https://ipfs.io/ipns/${data.id}`, 'id')
+    makeQR(ipnsLink, 'ipns-link')
     makeQR(data.publicKey, 'pub-key')
+
+    // Display peer info
+    document.getElementById('id').innerHTML = data.id
+    document.getElementById('ipns-link-raw').innerHTML = ipnsLink 
   })
 })
