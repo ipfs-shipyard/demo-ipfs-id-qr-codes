@@ -1,7 +1,7 @@
 {
   "name": "ipfs-id-qr-codes",
   "description": "A sample app using window.ipfs to build QR codes of the Private Key and Peer IPNS Address",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "private": true,
   "author": "Henrique Dias <hacdias@gmail.com>",
   "main": "dist/index.html",
