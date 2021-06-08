@@ -1,6 +1,6 @@
 # IPFS ID and Public Key example
 
-# Currently not working, as the [`window.ipfs` API is disabled](https://github.com/ipfs-shipyard/ipfs-companion/blob/master/docs/window.ipfs.md#%EF%B8%8F-windowipfs-is-disabled-for-now)
+# Currently not working, as the [`window.ipfs` API is disabled](https://github.com/ipfs/ipfs-companion/issues/589#issuecomment-712356448)
 
 ![](https://user-images.githubusercontent.com/5447088/38272321-cfc5ffd2-3780-11e8-93bd-51427c850271.png)
 
