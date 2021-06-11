@@ -6,108 +6,274 @@ See: https://github.com/ipfs-shipyard/ipfs-css
 */
 
 @font-face {
-  font-family: 'Inter UI';
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 300;
+  src: local('Inter ExtraLight'),
+    local('Inter-ExtraLight'),
+    url("fonts/Inter-ExtraLight.woff2") format("woff2"), /* Super modern browsers */
+    url('fonts/Inter-ExtraLight.woff') format('woff'), /* Pretty modern browsers */
+    url('fonts/Inter-ExtraLight.otf') format('opentype'); /* non-IE */
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 300;
+  src: local('Inter ExtraLight Italic'),
+    local('Inter-ExtraLightItalic'),
+    url("fonts/Inter-ExtraLightItalic.woff2") format("woff2"), /* Super modern browsers */
+    url('fonts/Inter-ExtraLightItalic.woff') format('woff'), /* Pretty modern browsers */
+    url('fonts/Inter-ExtraLightItalic.otf') format('opentype'); /* non-IE */
+}
+
+@font-face {
+  font-family: 'Inter';
   font-style:  normal;
   font-weight: 400;
-  src: local('Inter UI'), local('InterUI-Regular'), url("fonts/Inter-UI-Regular.woff2") format("woff2");
+  src: local('Inter'),
+    local('Inter-Regular'),
+    url("fonts/Inter-Regular.woff2") format("woff2"), /* Super modern browsers */
+    url('fonts/Inter-Regular.woff') format('woff'), /* Pretty modern browsers */
+    url('fonts/Inter-Regular.otf') format('opentype'); /* non-IE */
 }
 
 @font-face {
-  font-family: 'Inter UI';
+  font-family: 'Inter';
   font-style:  italic;
   font-weight: 400;
-  src: local('Inter UI Italic'), local('InterUI-Italic'), url("fonts/Inter-UI-Italic.woff2") format("woff2");
+  src: local('Inter Italic'),
+    local('Inter-Italic'),
+    url("fonts/Inter-Italic.woff2") format("woff2"), /* Super modern browsers */
+    url('fonts/Inter-Italic.woff') format('woff'), /* Pretty modern browsers */
+    url('fonts/Inter-Italic.otf') format('opentype'); /* non-IE */
 }
 
 @font-face {
-  font-family: 'Inter UI';
+  font-family: 'Inter';
   font-style:  normal;
   font-weight: 500;
-  src: local('Inter UI Medium'), local('InterUI-Medium'), url("fonts/Inter-UI-Medium.woff2") format("woff2");
+  src: local('Inter Medium'),
+    local('Inter-Medium'),
+    url("fonts/Inter-Medium.woff2") format("woff2"), /* Super modern browsers */
+    url('fonts/Inter-Medium.woff') format('woff'), /* Pretty modern browsers */
+    url('fonts/Inter-Medium.otf') format('opentype'); /* non-IE */
 }
 
 @font-face {
-  font-family: 'Inter UI';
+  font-family: 'Inter';
   font-style:  italic;
   font-weight: 500;
-  src: local('Inter UI Medium Italic'), local('InterUI-MediumItalic'), url("fonts/Inter-UI-MediumItalic.woff2") format("woff2");
+  src: local('Inter Medium Italic'),
+    local('Inter-MediumItalic'),
+    url("fonts/Inter-MediumItalic.woff2") format("woff2"), /* Super modern browsers */
+    url('fonts/Inter-MediumItalic.woff') format('woff'), /* Pretty modern browsers */
+    url('fonts/Inter-MediumItalic.otf') format('opentype'); /* non-IE */
 }
 
 @font-face {
-  font-family: 'Inter UI';
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 600;
+  src: local('Inter SemiBold'),
+    local('Inter-SemiBold'),
+    url("fonts/Inter-SemiBold.woff2") format("woff2"), /* Super modern browsers */
+    url('fonts/Inter-SemiBold.woff') format('woff'), /* Pretty modern browsers */
+    url('fonts/Inter-SemiBold.otf') format('opentype'); /* non-IE */
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 600;
+  src: local('Inter SemiBold Italic'),
+    local('Inter-SemiBoldItalic'),
+    url("fonts/Inter-SemiBoldItalic.woff2") format("woff2"), /* Super modern browsers */
+    url('fonts/Inter-SemiBoldItalic.woff') format('woff'), /* Pretty modern browsers */
+    url('fonts/Inter-SemiBoldItalic.otf') format('opentype'); /* non-IE */
+}
+
+@font-face {
+  font-family: 'Inter';
   font-style:  normal;
   font-weight: 700;
-  src: local('Inter UI Bold'), local('InterUI-Bold'), url("fonts/Inter-UI-Bold.woff2") format("woff2");
+  src: local('Inter Bold'),
+    local('Inter-Bold'),
+    url("fonts/Inter-Bold.woff2") format("woff2"), /* Super modern browsers */
+    url('fonts/Inter-Bold.woff') format('woff'), /* Pretty modern browsers */
+    url('fonts/Inter-Bold.otf') format('opentype'); /* non-IE */
 }
 
 @font-face {
-  font-family: 'Inter UI';
+  font-family: 'Inter';
   font-style:  italic;
   font-weight: 700;
-  src: local('Inter UI Bold Italic'), local('InterUI-BoldItalic'), url("fonts/Inter-UI-BoldItalic.woff2") format("woff2");
+  src: local('Inter Bold Italic'),
+    local('Inter-BoldItalic'),
+    url("fonts/Inter-BoldItalic.woff2") format("woff2"), /* Super modern browsers */
+    url('fonts/Inter-BoldItalic.woff') format('woff'), /* Pretty modern browsers */
+    url('fonts/Inter-BoldItalic.otf') format('opentype'); /* non-IE */
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 800;
+  src: local('Inter ExtraBold'),
+    local('Inter-ExtraBold'),
+    url("fonts/Inter-ExtraBold.woff2") format("woff2"), /* Super modern browsers */
+    url('fonts/Inter-ExtraBold.woff') format('woff'), /* Pretty modern browsers */
+    url('fonts/Inter-ExtraBold.otf') format('opentype'); /* non-IE */
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 800;
+  src: local('Inter ExtraBold Italic'),
+    local('Inter-ExtraBoldItalic'),
+    url("fonts/Inter-ExtraBoldItalic.woff2") format("woff2"), /* Super modern browsers */
+    url('fonts/Inter-ExtraBoldItalic.woff') format('woff'), /* Pretty modern browsers */
+    url('fonts/Inter-ExtraBoldItalic.otf') format('opentype'); /* non-IE */
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
-  src: local('Montserrat Light'), local('Montserrat-Light'), url('fonts/Montserrat-Light.woff2') format('woff2');
+  src: local('Montserrat Light'),
+    local('Montserrat-Light'),
+    url('fonts/Montserrat-Light.woff2') format('woff2'), /* Super modern browsers */
+    url('fonts/Montserrat-Light.woff') format('woff'), /* Pretty modern browsers */
+    url('fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: italic;
   font-weight: 300;
-  src: local('Montserrat Light Italic'), local('Montserrat-LightItalic'), url('fonts/Montserrat-LightItalic.woff2') format('woff2');
+  src: local('Montserrat Light Italic'),
+    local('Montserrat-LightItalic'),
+    url('fonts/Montserrat-LightItalic.woff2') format('woff2'), /* Super modern browsers */
+    url('fonts/Montserrat-LightItalic.woff') format('woff'), /* Pretty modern browsers */
+    url('fonts/Montserrat-LightItalic.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url('fonts/Montserrat-Regular.woff2') format('woff2');
+  src: local('Montserrat Regular'),
+    local('Montserrat-Regular'),
+    url('fonts/Montserrat-Regular.woff2') format('woff2'), /* Super modern browsers */
+    url('fonts/Montserrat-Regular.woff') format('woff'), /* Pretty modern browsers */
+    url('fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: italic;
   font-weight: 400;
-  src: local('Montserrat Italic'), local('Montserrat-Italic'), url('fonts/Montserrat-Italic.woff2') format('woff2');
+  src: local('Montserrat Italic'),
+    local('Montserrat-Italic'),
+    url('fonts/Montserrat-Italic.woff2') format('woff2'), /* Super modern browsers */
+    url('fonts/Montserrat-Italic.woff') format('woff'), /* Pretty modern browsers */
+    url('fonts/Montserrat-Italic.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Montserrat Medium'),
+    local('Montserrat-Medium'),
+    url('fonts/Montserrat-Medium.woff2') format('woff2'), /* Super modern browsers */
+    url('fonts/Montserrat-Medium.woff') format('woff'), /* Pretty modern browsers */
+    url('fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Montserrat Medium Italic'),
+    local('Montserrat-MediumItalic'),
+    url('fonts/Montserrat-MediumItalic.woff2') format('woff2'), /* Super modern browsers */
+    url('fonts/Montserrat-MediumItalic.woff') format('woff'), /* Pretty modern browsers */
+    url('fonts/Montserrat-MediumItalic.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url('fonts/Montserrat-SemiBold.woff2') format('woff2');
+  src: local('Montserrat SemiBold'),
+    local('Montserrat-SemiBold'),
+    url('fonts/Montserrat-SemiBold.woff2') format('woff2'), /* Super modern browsers */
+    url('fonts/Montserrat-SemiBold.woff') format('woff'), /* Pretty modern browsers */
+    url('fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: italic;
   font-weight: 600;
-  src: local('Montserrat SemiBold Italic'), local('Montserrat-SemiBoldItalic'), url('fonts/Montserrat-SemiBoldItalic.woff2') format('woff2');
+  src: local('Montserrat SemiBold Italic'),
+    local('Montserrat-SemiBoldItalic'),
+    url('fonts/Montserrat-SemiBoldItalic.woff2') format('woff2'), /* Super modern browsers */
+    url('fonts/Montserrat-SemiBoldItalic.woff') format('woff'), /* Pretty modern browsers */
+    url('fonts/Montserrat-SemiBoldItalic.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: local('Montserrat Bold'), local('Montserrat-Bold'), url('fonts/Montserrat-Bold.woff2') format('woff2');
+  src: local('Montserrat Bold'),
+    local('Montserrat-Bold'),
+    url('fonts/Montserrat-Bold.woff2') format('woff2'), /* Super modern browsers */
+    url('fonts/Montserrat-Bold.woff') format('woff'), /* Pretty modern browsers */
+    url('fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: italic;
   font-weight: 700;
-  src: local('Montserrat Bold Italic'), local('Montserrat-BoldItalic'), url('fonts/Montserrat-BoldItalic.woff2') format('woff2');
+  src: local('Montserrat Bold Italic'),
+    local('Montserrat-BoldItalic'),
+    url('fonts/Montserrat-BoldItalic.woff2') format('woff2'), /* Super modern browsers */
+    url('fonts/Montserrat-BoldItalic.woff') format('woff'), /* Pretty modern browsers */
+    url('fonts/Montserrat-BoldItalic.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Montserrat ExtraBold'),
+    local('Montserrat-ExtraBold'),
+    url('fonts/Montserrat-ExtraBold.woff2') format('woff2'), /* Super modern browsers */
+    url('fonts/Montserrat-ExtraBold.woff') format('woff'), /* Pretty modern browsers */
+    url('fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Montserrat ExtraBold Italic'),
+    local('Montserrat-ExtraBoldItalic'),
+    url('fonts/Montserrat-ExtraBoldItalic.woff2') format('woff2'), /* Super modern browsers */
+    url('fonts/Montserrat-ExtraBoldItalic.woff') format('woff'), /* Pretty modern browsers */
+    url('fonts/Montserrat-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
 }
 
 /* IPFS theme.css - Generated from https://github.com/ipfs-shipyard/ipfs-css/blob/master/theme.json */
 
 /* ---- font ----- */
 
-.sans-serif { font-family: 'Inter UI', system-ui, sans-serif; }
+.sans-serif { font-family: 'Inter', system-ui, sans-serif; }
 
 .montserrat { font-family: 'Montserrat', 'Verdana', system-ui, sans-serif; }
 
@@ -139,7 +305,7 @@ See: https://github.com/ipfs-shipyard/ipfs-css
 
 .yellow-muted { color: #f9a13e; }
 
-.teal { color: #3e9096; }
+.teal { color: #378085; }
 
 .teal-muted { color: #439a9d; }
 
@@ -150,6 +316,10 @@ See: https://github.com/ipfs-shipyard/ipfs-css
 .snow { color: #edf0f4; }
 
 .snow-muted { color: #f7f8fa; }
+
+.link { color: #117eb3; }
+
+.washed-blue { color: #F0F6FA; }
 
 .bg-navy { background-color: #0b3a53; }
 
@@ -175,7 +345,7 @@ See: https://github.com/ipfs-shipyard/ipfs-css
 
 .bg-yellow-muted { background-color: #f9a13e; }
 
-.bg-teal { background-color: #3e9096; }
+.bg-teal { background-color: #378085; }
 
 .bg-teal-muted { background-color: #439a9d; }
 
@@ -187,77 +357,89 @@ See: https://github.com/ipfs-shipyard/ipfs-css
 
 .bg-snow-muted { background-color: #f7f8fa; }
 
-.hover-navy:hover { color: #0b3a53; }
+.bg-link { background-color: #117eb3; }
 
-.hover-navy-muted:hover { color: #244e66; }
+.bg-washed-blue { background-color: #F0F6FA; }
 
-.hover-aqua:hover { color: #69c4cd; }
+.hover-navy:hover, .hover-navy:focus { color: #0b3a53; }
 
-.hover-aqua-muted:hover { color: #9ad4db; }
+.hover-navy-muted:hover, .hover-navy-muted:focus { color: #244e66; }
 
-.hover-gray:hover { color: #b7bbc8; }
+.hover-aqua:hover, .hover-aqua:focus { color: #69c4cd; }
 
-.hover-gray-muted:hover { color: #d9dbe2; }
+.hover-aqua-muted:hover, .hover-aqua-muted:focus { color: #9ad4db; }
 
-.hover-charcoal:hover { color: #34373f; }
+.hover-gray:hover, .hover-gray:focus { color: #b7bbc8; }
 
-.hover-charcoal-muted:hover { color: #7f8491; }
+.hover-gray-muted:hover, .hover-gray-muted:focus { color: #d9dbe2; }
 
-.hover-red:hover { color: #ea5037; }
+.hover-charcoal:hover, .hover-charcoal:focus { color: #34373f; }
 
-.hover-red-muted:hover { color: #f36149; }
+.hover-charcoal-muted:hover, .hover-charcoal-muted:focus { color: #7f8491; }
 
-.hover-yellow:hover { color: #f39021; }
+.hover-red:hover, .hover-red:focus { color: #ea5037; }
 
-.hover-yellow-muted:hover { color: #f9a13e; }
+.hover-red-muted:hover, .hover-red-muted:focus { color: #f36149; }
 
-.hover-teal:hover { color: #3e9096; }
+.hover-yellow:hover, .hover-yellow:focus { color: #f39021; }
 
-.hover-teal-muted:hover { color: #439a9d; }
+.hover-yellow-muted:hover, .hover-yellow-muted:focus { color: #f9a13e; }
 
-.hover-green:hover { color: #0cb892; }
+.hover-teal:hover, .hover-teal:focus { color: #378085; }
 
-.hover-green-muted:hover { color: #0aca9f; }
+.hover-teal-muted:hover, .hover-teal-muted:focus { color: #439a9d; }
 
-.hover-snow:hover { color: #edf0f4; }
+.hover-green:hover, .hover-green:focus { color: #0cb892; }
 
-.hover-snow-muted:hover { color: #f7f8fa; }
+.hover-green-muted:hover, .hover-green-muted:focus { color: #0aca9f; }
 
-.hover-bg-navy:hover { background-color: #0b3a53; }
+.hover-snow:hover, .hover-snow:focus { color: #edf0f4; }
 
-.hover-bg-navy-muted:hover { background-color: #244e66; }
+.hover-snow-muted:hover, .hover-snow-muted:focus { color: #f7f8fa; }
 
-.hover-bg-aqua:hover { background-color: #69c4cd; }
+.hover-link:hover, .hover-link:focus { color: #117eb3; }
 
-.hover-bg-aqua-muted:hover { background-color: #9ad4db; }
+.hover-washed-blue:hover, .hover-washed-blue:focus { color: #F0F6FA; }
 
-.hover-bg-gray:hover { background-color: #b7bbc8; }
+.hover-bg-navy:hover, .hover-bg-navy:focus { background-color: #0b3a53; }
 
-.hover-bg-gray-muted:hover { background-color: #d9dbe2; }
+.hover-bg-navy-muted:hover, .hover-bg-navy-muted:focus { background-color: #244e66; }
 
-.hover-bg-charcoal:hover { background-color: #34373f; }
+.hover-bg-aqua:hover, .hover-bg-aqua:focus { background-color: #69c4cd; }
 
-.hover-bg-charcoal-muted:hover { background-color: #7f8491; }
+.hover-bg-aqua-muted:hover, .hover-bg-aqua-muted:focus { background-color: #9ad4db; }
 
-.hover-bg-red:hover { background-color: #ea5037; }
+.hover-bg-gray:hover, .hover-bg-gray:focus { background-color: #b7bbc8; }
 
-.hover-bg-red-muted:hover { background-color: #f36149; }
+.hover-bg-gray-muted:hover, .hover-bg-gray-muted:focus { background-color: #d9dbe2; }
 
-.hover-bg-yellow:hover { background-color: #f39021; }
+.hover-bg-charcoal:hover, .hover-bg-charcoal:focus { background-color: #34373f; }
 
-.hover-bg-yellow-muted:hover { background-color: #f9a13e; }
+.hover-bg-charcoal-muted:hover, .hover-bg-charcoal-muted:focus { background-color: #7f8491; }
 
-.hover-bg-teal:hover { background-color: #3e9096; }
+.hover-bg-red:hover, .hover-bg-red:focus { background-color: #ea5037; }
 
-.hover-bg-teal-muted:hover { background-color: #439a9d; }
+.hover-bg-red-muted:hover, .hover-bg-red-muted:focus { background-color: #f36149; }
 
-.hover-bg-green:hover { background-color: #0cb892; }
+.hover-bg-yellow:hover, .hover-bg-yellow:focus { background-color: #f39021; }
 
-.hover-bg-green-muted:hover { background-color: #0aca9f; }
+.hover-bg-yellow-muted:hover, .hover-bg-yellow-muted:focus { background-color: #f9a13e; }
 
-.hover-bg-snow:hover { background-color: #edf0f4; }
+.hover-bg-teal:hover, .hover-bg-teal:focus { background-color: #378085; }
 
-.hover-bg-snow-muted:hover { background-color: #f7f8fa; }
+.hover-bg-teal-muted:hover, .hover-bg-teal-muted:focus { background-color: #439a9d; }
+
+.hover-bg-green:hover, .hover-bg-green:focus { background-color: #0cb892; }
+
+.hover-bg-green-muted:hover, .hover-bg-green-muted:focus { background-color: #0aca9f; }
+
+.hover-bg-snow:hover, .hover-bg-snow:focus { background-color: #edf0f4; }
+
+.hover-bg-snow-muted:hover, .hover-bg-snow-muted:focus { background-color: #f7f8fa; }
+
+.hover-bg-link:hover, .hover-bg-link:focus { background-color: #117eb3; }
+
+.hover-bg-washed-blue:hover, .hover-bg-washed-blue:focus { background-color: #F0F6FA; }
 
 .fill-navy { fill: #0b3a53; }
 
@@ -283,7 +465,7 @@ See: https://github.com/ipfs-shipyard/ipfs-css
 
 .fill-yellow-muted { fill: #f9a13e; }
 
-.fill-teal { fill: #3e9096; }
+.fill-teal { fill: #378085; }
 
 .fill-teal-muted { fill: #439a9d; }
 
@@ -295,81 +477,143 @@ See: https://github.com/ipfs-shipyard/ipfs-css
 
 .fill-snow-muted { fill: #f7f8fa; }
 
-.hover-fill-navy:hover { fill: #0b3a53; }
+.fill-link { fill: #117eb3; }
 
-.hover-fill-navy-muted:hover { fill: #244e66; }
+.fill-washed-blue { fill: #F0F6FA; }
 
-.hover-fill-aqua:hover { fill: #69c4cd; }
+.hover-fill-navy:hover, .hover-fill-navy:focus { fill: #0b3a53; }
 
-.hover-fill-aqua-muted:hover { fill: #9ad4db; }
+.hover-fill-navy-muted:hover, .hover-fill-navy-muted:focus { fill: #244e66; }
 
-.hover-fill-gray:hover { fill: #b7bbc8; }
+.hover-fill-aqua:hover, .hover-fill-aqua:focus { fill: #69c4cd; }
 
-.hover-fill-gray-muted:hover { fill: #d9dbe2; }
+.hover-fill-aqua-muted:hover, .hover-fill-aqua-muted:focus { fill: #9ad4db; }
 
-.hover-fill-charcoal:hover { fill: #34373f; }
+.hover-fill-gray:hover, .hover-fill-gray:focus { fill: #b7bbc8; }
 
-.hover-fill-charcoal-muted:hover { fill: #7f8491; }
+.hover-fill-gray-muted:hover, .hover-fill-gray-muted:focus { fill: #d9dbe2; }
 
-.hover-fill-red:hover { fill: #ea5037; }
+.hover-fill-charcoal:hover, .hover-fill-charcoal:focus { fill: #34373f; }
 
-.hover-fill-red-muted:hover { fill: #f36149; }
+.hover-fill-charcoal-muted:hover, .hover-fill-charcoal-muted:focus { fill: #7f8491; }
 
-.hover-fill-yellow:hover { fill: #f39021; }
+.hover-fill-red:hover, .hover-fill-red:focus { fill: #ea5037; }
 
-.hover-fill-yellow-muted:hover { fill: #f9a13e; }
+.hover-fill-red-muted:hover, .hover-fill-red-muted:focus { fill: #f36149; }
 
-.hover-fill-teal:hover { fill: #3e9096; }
+.hover-fill-yellow:hover, .hover-fill-yellow:focus { fill: #f39021; }
 
-.hover-fill-teal-muted:hover { fill: #439a9d; }
+.hover-fill-yellow-muted:hover, .hover-fill-yellow-muted:focus { fill: #f9a13e; }
 
-.hover-fill-green:hover { fill: #0cb892; }
+.hover-fill-teal:hover, .hover-fill-teal:focus { fill: #378085; }
 
-.hover-fill-green-muted:hover { fill: #0aca9f; }
+.hover-fill-teal-muted:hover, .hover-fill-teal-muted:focus { fill: #439a9d; }
 
-.hover-fill-snow:hover { fill: #edf0f4; }
+.hover-fill-green:hover, .hover-fill-green:focus { fill: #0cb892; }
 
-.hover-fill-snow-muted:hover { fill: #f7f8fa; }
+.hover-fill-green-muted:hover, .hover-fill-green-muted:focus { fill: #0aca9f; }
 
-.border-navy { border-color: #0b3a53; }
+.hover-fill-snow:hover, .hover-fill-snow:focus { fill: #edf0f4; }
 
-.border-navy-muted { border-color: #244e66; }
+.hover-fill-snow-muted:hover, .hover-fill-snow-muted:focus { fill: #f7f8fa; }
 
-.border-aqua { border-color: #69c4cd; }
+.hover-fill-link:hover, .hover-fill-link:focus { fill: #117eb3; }
 
-.border-aqua-muted { border-color: #9ad4db; }
+.hover-fill-washed-blue:hover, .hover-fill-washed-blue:focus { fill: #F0F6FA; }
 
-.border-gray { border-color: #b7bbc8; }
+.border-navy, .b--navy { border-color: #0b3a53; }
 
-.border-gray-muted { border-color: #d9dbe2; }
+.border-navy-muted, .b--navy-muted { border-color: #244e66; }
 
-.border-charcoal { border-color: #34373f; }
+.border-aqua, .b--aqua { border-color: #69c4cd; }
 
-.border-charcoal-muted { border-color: #7f8491; }
+.border-aqua-muted, .b--aqua-muted { border-color: #9ad4db; }
 
-.border-red { border-color: #ea5037; }
+.border-gray, .b--gray { border-color: #b7bbc8; }
 
-.border-red-muted { border-color: #f36149; }
+.border-gray-muted, .b--gray-muted { border-color: #d9dbe2; }
 
-.border-yellow { border-color: #f39021; }
+.border-charcoal, .b--charcoal { border-color: #34373f; }
 
-.border-yellow-muted { border-color: #f9a13e; }
+.border-charcoal-muted, .b--charcoal-muted { border-color: #7f8491; }
 
-.border-teal { border-color: #3e9096; }
+.border-red, .b--red { border-color: #ea5037; }
 
-.border-teal-muted { border-color: #439a9d; }
+.border-red-muted, .b--red-muted { border-color: #f36149; }
 
-.border-green { border-color: #0cb892; }
+.border-yellow, .b--yellow { border-color: #f39021; }
 
-.border-green-muted { border-color: #0aca9f; }
+.border-yellow-muted, .b--yellow-muted { border-color: #f9a13e; }
 
-.border-snow { border-color: #edf0f4; }
+.border-teal, .b--teal { border-color: #378085; }
 
-.border-snow-muted { border-color: #f7f8fa; }
+.border-teal-muted, .b--teal-muted { border-color: #439a9d; }
 
-.ipfs-gradient-0 { background-image: linear-gradient(to top, #041727 0%,#043b55 100%); }
+.border-green, .b--green { border-color: #0cb892; }
+
+.border-green-muted, .b--green-muted { border-color: #0aca9f; }
+
+.border-snow, .b--snow { border-color: #edf0f4; }
+
+.border-snow-muted, .b--snow-muted { border-color: #f7f8fa; }
+
+.border-link, .b--link { border-color: #117eb3; }
+
+.border-washed-blue, .b--washed-blue { border-color: #F0F6FA; }
+
+.ipfs-gradient-0 { background-image: -webkit-gradient(linear, left bottom, left top, from(#041727),to(#043b55)); background-image: linear-gradient(to top, #041727 0%,#043b55 100%); }
 
 .transition-all {
+  -webkit-transition: .2s ease all;
   transition: .2s ease all;
+}
+
+.no-select {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.force-select {
+  -webkit-user-select: all;
+     -moz-user-select: all;
+      -ms-user-select: all;
+          user-select: all;
+}
+
+.no-pointer-events {
+  pointer-events: none;
+}
+
+.focus-underline:focus {
+  text-decoration: underline;
+}
+
+.focus-outline:focus {
+  outline: 0;
+  box-shadow: 0 0 0 .2rem rgba(201, 210, 215, .4);
+}
+
+.focus-outline-red:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(243, 97, 73, 0.4);
+}
+
+.focus-outline-green:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(10, 202, 159, 0.4);
+}
+
+.stroke-current-color {
+  stroke: currentColor;
+}
+
+.fill-current-color {
+  fill: currentColor;
+}
+
+.fill-white {
+  fill: white;
 }
 
