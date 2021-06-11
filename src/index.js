@@ -25,7 +25,7 @@ function showError (e) {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-  const { ipfs, provider } = await getIpfs({
+  const res = await getIpfs({
     loadHttpClientModule: () => require('ipfs-http-client').create,
     providers: [
       providers.httpClient({
@@ -35,10 +35,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     ]
   })
 
-  if (!ipfs || !provider) {
+  if (!res) {
     showError(new Error('Could not find an active IPFS instance.'))
     return
   }
+
+  const ipfs = res.ipfs
 
   try {
     const { id, publicKey } = await ipfs.id()
