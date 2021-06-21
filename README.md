@@ -1,5 +1,9 @@
 # IPFS ID and Public Key example
 
+> Simple demo app that connects to API port of IPFS node, reads its PeerID and displays  it as QR code.
+> 
+> **Note:**  ⚠️ this is just a PoC, not meant for production use. Due to the way browser security model works, this example requires CORS safelisting via `API.HTTPHeaders.Access-Control-Allow-Origin`
+
 > ![2021-06-21--17-57-49](https://user-images.githubusercontent.com/157609/122792237-45b26000-d2ba-11eb-8681-55485692fd72.png)
 
 
