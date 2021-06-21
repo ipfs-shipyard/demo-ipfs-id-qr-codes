@@ -1,12 +1,13 @@
 # IPFS ID and Public Key example
 
-![](https://user-images.githubusercontent.com/5447088/38272321-cfc5ffd2-3780-11e8-93bd-51427c850271.png)
+> ![2021-06-21--17-57-49](https://user-images.githubusercontent.com/157609/122792237-45b26000-d2ba-11eb-8681-55485692fd72.png)
 
-Demo: https://ipfs.io/ipfs/QmSeMmV2UASBaSCYJtQF1WNXxqweCFv6o3VdGswEJoo38M
+
+Demo:  https://bafybeib77af5a2ymrhl2etf4hq2x32o7qs3shkaatznyjxrhnipksjkh4i.ipfs.dweb.link (needs to be appended to `API.HTTPHeaders.Access-Control-Allow-Origin`)
 
 ## Install
 
-1. This requires the user to have an [IPFS node running](https://ipfs.io/#install).
+1. This requires the user to have an [IPFS node running](https://ipfs.io/#install) with the app Origin added to `API.HTTPHeaders.Access-Control-Allow-Origin`
 2. Install dependencies `npm install`
 3. Build the app `npm run build`
 4. Start the app `npm start`
