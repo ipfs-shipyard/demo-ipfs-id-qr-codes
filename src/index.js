@@ -1,20 +1,19 @@
+const { getIpfs, providers } = require('ipfs-provider')
 const qrcode = require('qrcode-generator')
 
 function makeQR (data, id) {
-  let qr, base64, tag, el
-
   // Build QR
-  qr = qrcode(0, 'L')
+  const qr = qrcode(0, 'L')
   qr.addData(data)
   qr.make()
 
   // Create Base64
-  tag = qr.createSvgTag()
+  let tag = qr.createSvgTag()
   tag = tag.replace('black', '#0b3a53', -1)
-  base64 = window.btoa(tag)
+  const base64 = window.btoa(tag)
 
   // Fill element
-  el = document.getElementById(id)
+  const el = document.getElementById(id)
   el.innerHTML = `<img src="data:image/svg+xml;base64,${base64}"/>`
 }
 
@@ -25,27 +24,38 @@ function showError (e) {
   el.innerHTML = e.message
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  require('window.ipfs-is-required')()
+document.addEventListener('DOMContentLoaded', async () => {
+  const res = await getIpfs({
+    loadHttpClientModule: () => require('ipfs-http-client').create,
+    providers: [
+      providers.httpClient({
+        apiAddress: '/ip4/127.0.0.1/tcp/5001'
+      }),
+      providers.httpClient()
+    ]
+  })
 
-  if (!window.ipfs) {
-    showError(new Error('window.ipfs is undefined'))
+  if (!res) {
+    showError(new Error('Could not find an active IPFS instance.'))
     return
   }
 
-  window.ipfs.id((err, data) => {
-    if (err) return showError(err)
+  const ipfs = res.ipfs
 
-    const ipnsLink = `https://ipfs.io/ipns/${data.id}`
+  try {
+    const { id, publicKey } = await ipfs.id()
+    const ipnsLink = `https://gateway.ipfs.io/ipns/${id}`
 
     // Display and make QRs
     document.getElementById('qrs').classList.remove('dn')
     makeQR(ipnsLink, 'ipns-link')
-    makeQR(data.publicKey, 'pub-key')
+    makeQR(publicKey, 'pub-key')
 
     // Display peer info
     document.getElementById('infos').classList.remove('dn')
-    document.getElementById('id').innerHTML = data.id
-    document.getElementById('ipns-link-raw').innerHTML = ipnsLink 
-  })
+    document.getElementById('id').innerHTML = id
+    document.getElementById('ipns-link-raw').innerHTML = ipnsLink
+  } catch (err) {
+    showError(err)
+  }
 })
